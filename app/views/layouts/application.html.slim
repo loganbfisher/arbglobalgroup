@@ -15,15 +15,16 @@ html
     = render 'layouts/navigation'
     .main-container
       .container
-        .hero
-          .message-wrapper
-            .message
-              .row
-                .large-12.centered.columns
-                  h2 We take the time to design solutions that will satisfy your transportation needs.
-              .row
-                .small-3.small-centered.columns
-                  = link_to 'Find out more', abouts_path, class: 'button'
+        - if root_path == request.path
+          .hero
+            .message-wrapper
+              .message
+                .row
+                  .large-12.centered.columns
+                    h2 We take the time to design solutions that will satisfy your transportation needs.
+                .row
+                  .small-3.small-centered.columns
+                    = link_to 'Find out more', abouts_path, class: 'button'
         .row
           .padding
             = render 'layouts/messages'
