@@ -13,8 +13,6 @@ html
     == csrf_meta_tags
   body
     = render 'layouts/navigation'
-    = render 'layouts/messages'
-
     .main-container
       .container
         .hero
@@ -28,4 +26,5 @@ html
                   = link_to 'Find out more', abouts_path, class: 'button'
         .row
           .padding
+            = render 'layouts/messages'
             = yield
