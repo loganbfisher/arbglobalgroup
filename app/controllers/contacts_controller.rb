@@ -5,6 +5,6 @@ class ContactsController < ApplicationController
 
   def create
     ArbMailer.new_contact(params).deliver
-    redirect_to new_quotes_path, flash: {:notice => 'The form was submitted successfully'}
+    redirect_to new_contacts_path, flash: {:notice => 'The form was submitted successfully'}
   end
 end
