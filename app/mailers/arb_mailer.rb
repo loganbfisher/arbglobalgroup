@@ -1,4 +1,5 @@
 class ArbMailer < ActionMailer::Base
+  default from: "info@arbglobalgroup.com"
 
   def new_quote(params)
     @params = params
