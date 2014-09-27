@@ -1,0 +1,16 @@
+h5 Contact us.
+hr
+= form_tag quotes_path
+  = label_tag :name, 'First Name'
+  = text_field_tag :name, nil, class: 'small-input'
+
+  = label_tag :company_name, 'Company Name'
+  = text_field_tag :company_name, nil,class: 'small-input'
+
+  = label_tag :email_address, 'Email Address'
+  = email_field_tag :email_address, nil, class: 'small-input'
+
+  = label_tag :question, 'What would you like to know more about?'
+  = text_area_tag :question, nil, class: 'small-input'
+
+  = submit_tag 'Submit', class: 'button'

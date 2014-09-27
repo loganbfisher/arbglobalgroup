@@ -1,0 +1,14 @@
+= form_tag quotes_path
+  = label_tag :name, 'First Name'
+  = text_field_tag :name
+
+  = label_tag :company_name, 'Company Name'
+  = text_field_tag :company_name
+
+  = label_tag :email_address, 'Email Address'
+  = email_field_tag :email_address
+
+  = label_tag :question, 'What would you like to know more about?'
+  = text_area_tag :question
+
+  = submit_tag 'Submit', class: 'button'

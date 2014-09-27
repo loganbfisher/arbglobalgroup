@@ -1,0 +1,29 @@
+= form_tag quotes_path
+  = label_tag :first_name, 'First Name'
+  = text_field_tag :first_name
+
+  = label_tag :last_name, 'Last Name'
+  = text_field_tag :last_name
+
+  = label_tag :company_name, 'Company Name'
+  = text_field_tag :company_name
+
+  = label_tag :email_address, 'Email Address'
+  = email_field_tag :email_address
+
+  = label_tag :phone_number, 'Phone Number'
+  = phone_field_tag :phone_number
+
+  = label_tag :zip, 'Zip Code'
+  = text_field_tag :zip
+
+  = label_tag :destination_zip, 'Destination Zip Code'
+  = text_field_tag :destination_zip
+
+  = label_tag :number_of_pieces, 'Number of Pieces'
+  = text_field_tag :number_of_pieces
+
+  = label_tag :weight, 'Weight'
+  = text_field_tag :weight
+
+  = submit_tag 'Submit', class: 'button'

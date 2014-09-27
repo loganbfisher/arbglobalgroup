@@ -1,0 +1,30 @@
+// import the CSS framework
+@import "foundation";
+
+body { font-family: 'Montserrat', sans-serif; }
+h1, h2, h3, h4, h5, h6 { font-family: 'Montserrat', sans-serif; font-style: italic; }
+.button { background: red; font-weight: bold; }
+.small-input { margin-bottom: 5px !important; height: 30px !important; }
+
+header { border-top: 3px solid black; border-bottom: 1px solid #cccccc;
+  ul { list-style-type:  none; margin: 0; padding: 0;
+    li { border-right: 1px solid #ccc; float: left; padding: 0 10px;
+      a { color: black; padding: 29px 30px; float: left; }
+    }
+  }
+}
+
+.hero { background: url('hero/slide_1.jpg') no-repeat 0 0; height: 364px; position: relative; background-size: cover;
+  .message-wrapper { width: 100%; position: absolute; background-color: rgba(0, 0, 0, 0.7); background: rgba(0, 0, 0, 0.7); color: rgba(0, 0, 0, 0.7); margin-top: 60px; padding: 20px 0;
+    .message {
+      h2 { text-align: center; font-weight: normal; color: white; line-height: 50px; margin-bottom: 20px; }
+    }
+  }
+
+}
+
+.main-container {
+  .container { background: #f2f2f2;
+    .padding { padding: 20px; }
+  }
+}
