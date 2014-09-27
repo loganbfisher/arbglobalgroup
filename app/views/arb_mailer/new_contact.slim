@@ -1,13 +1,6 @@
 h2 = "New contact form submission from #{@params['name']}"
 hr
-h4 style="margin: 0; margin-top 10px;" Name
-p style="margin: 0;" = @params['name']
-
-h4 style="margin: 0; margin-top 10px;" Company name
-p style="margin: 0;" = @params['company_name']
-
-h4 style="margin: 0; margin-top 10px;" Email address
-p style="margin: 0;" = @params['email_address']
-
-h4 style="margin: 0; margin-top 10px;" Question
-p style="margin: 0;" = @params['question']
+p = "<strong>Name:</strong> #{@params['name']}".html_safe
+p = "<strong>Company name:</strong> #{@params['company_name']}".html_safe
+p = "<strong>Email address:</strong> #{@params['email_address']}".html_safe
+p = "<strong>Question:</strong> #{@params['question']}".html_safe

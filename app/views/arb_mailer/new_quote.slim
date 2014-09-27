@@ -1,28 +1,12 @@
 h2 = "New quote form submission from #{@params['first_name']} #{@params['last_name']}"
 hr
-h4 style="margin: 0; margin-top 10px;" First name
-p style="margin: 0;" = @params['first_name']
+p = "<strong>First name:</strong> #{@params['first_name']}".html_safe
+p = "<strong>Last name:</strong> #{@params['last_name']}".html_safe
+p = "<strong>Company name:</strong> #{@params['company_name']}".html_safe
+p = "<strong>Email address:</strong> #{@params['email_address']}".html_safe
+p = "<strong>Phone number:</strong> #{@params['phone_number']}".html_safe
+p = "<strong>Zip code:</strong> #{@params['zip']}".html_safe
+p = "<strong>Destination zip code:</strong> #{@params['destination_zip']}".html_safe
+p = "<strong>Number of pieces:</strong> #{@params['number_of_pieces']}".html_safe
+p = "<strong>Weight:</strong> #{@params['weight']}".html_safe
 
-h4 style="margin: 0; margin-top 10px;" Last name
-p style="margin: 0;" = @params['last_name']
-
-h4 style="margin: 0; margin-top 10px;" Company name
-p style="margin: 0;" = @params['company_name']
-
-h4 style="margin: 0; margin-top 10px;" Email address
-p style="margin: 0;" = @params['email_address']
-
-h4 style="margin: 0; margin-top 10px;" Phone number
-p style="margin: 0;" = @params['phone_number']
-
-h4 style="margin: 0; margin-top 10px;" Zip code
-p style="margin: 0;" = @params['zip']
-
-h4 style="margin: 0; margin-top 10px;" Destination zip code
-p style="margin: 0;" = @params['destination_zip']
-
-h4 style="margin: 0; margin-top 10px;" Number of pieces
-p style="margin: 0;" = @params['number_of_pieces']
-
-h4 style="margin: 0; margin-top 10px;" Weight
-p style="margin: 0;" = @params['weight']
