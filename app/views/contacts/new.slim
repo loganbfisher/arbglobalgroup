@@ -1,14 +1,27 @@
-= form_tag contacts_path
-  = label_tag :name, 'Full Name'
-  = text_field_tag :name
+.large-8.columns
+  = form_tag contacts_path
+    = label_tag :name, 'Full Name'
+    = text_field_tag :name
 
-  = label_tag :company_name, 'Company Name'
-  = text_field_tag :company_name
+    = label_tag :company_name, 'Company Name'
+    = text_field_tag :company_name
 
-  = label_tag :email_address, 'Email Address'
-  = email_field_tag :email_address
+    = label_tag :email_address, 'Email Address'
+    = email_field_tag :email_address
 
-  = label_tag :question, 'What would you like to know more about?'
-  = text_area_tag :question
+    = label_tag :question, 'What would you like to know more about?'
+    = text_area_tag :question
 
-  = submit_tag 'Submit', class: 'button'
+    = submit_tag 'Submit', class: 'button'
+.large-4.columns
+  strong Stephanie: 903-373-2014
+  br
+  a href="mailto:stephanie@arbglobalgroup.com" stephanie@arbglobalgroup.com
+  hr
+  strong John: 903-373-1270
+  br
+  a href="mailto:john@arbglobalgroup.com" john@arbglobalgroup.com
+  hr
+  strong Kristen: 619-948-8399
+  br
+  a href="mailto:kristen@arbglobalgroup.com" kristen@arbglobalgroup.com
